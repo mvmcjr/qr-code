@@ -78,7 +78,7 @@ jobs:
         run: flutter build apk --release
 
       - name: Upload Android Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: android-build
           path: build/app/outputs/flutter-apk/app-release.apk
@@ -108,13 +108,13 @@ jobs:
         run: 7z a build/windows/x64/installer/Release/windows-build.zip ./build/windows/x64/runner/Release/*
 
       - name: Upload Windows Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: windows-build
           path: build/windows/x64/installer/Release/*-Installer.exe
 
       - name: Upload Windows Zip
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: windows-x64
           path: build/windows/x64/installer/Release/windows-build.zip      
@@ -125,7 +125,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download Artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           path: artifacts
 
