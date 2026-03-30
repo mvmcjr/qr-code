@@ -43,7 +43,7 @@ dependencies:
   flex_color_picker: ^3.5.1
   super_clipboard: ^0.8.18
   firebase_core: ^3.5.0
-  firebase_auth: ^5.3.0
+  firebase_auth: ^6.0.0
   cloud_firestore: ^5.4.2
   crypto: ^3.0.5
 
